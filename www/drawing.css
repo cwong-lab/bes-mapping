@@ -1,0 +1,29 @@
+html { height: 100%; margin:0; padding: 0; overflow: hidden;}
+div {margin: 0; padding: 0;}
+body { height: 100%; margin: 0px; padding: 0px }
+.scribble-map, .map-canvas {height: 100%; width: 100%; margin:0px; padding: 0px; top:0; left:0; position:absolute;}
+
+div.delete-community {
+    height: 7em;
+    text-align: center;
+}
+div.delete-community p {
+    margin: 1em;
+}
+a.drawing-button {
+    border: 1px solid #eee;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.mapbutton {
+    color: red;
+    text-align: center;
+    background-color: white;
+    margin: 0.1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; 
+    box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; 
+    cursor: pointer;
+}

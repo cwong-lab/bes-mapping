@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Drawing</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type = "text/javascript" src = "http://maps.google.com/maps/api/js?key=AIzaSyBWk4CH-DQPd1xZ-4BdJkHpxpA4tATDThM&sensor=false&libraries=drawing"></script>
+    <script type = "text/javascript" src = "/js/mapping.js"></script>
+    <link rel="stylesheet" type="text/css" href="drawing.css" media = "screen" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <form action = "/drawing" method = "post">
+      <input type = "hidden" name = "_httptype" value = "POST" />
+      <input type = "hidden" name = "yougovid" value = "<?php echo $yougovid; ?>" />
+      
+        <div class = "scribble-map" >
+          <div class = "map-canvas"></div>
+          <input type = "hidden" name = "postcode" class = "postcode" value = "<?php echo $postcode; ?>" />
+
+          <input type = "hidden" name = "drawing" class = "drawing" value = "" />
+          <input type = "hidden" name = "events" class = "events" value = "" />
+          <input type = "hidden" name = "zoom" class = "zoom" value = "<?php echo $zoom; ?>" />
+          <input type = "hidden" name = "lat" class = "lat" value = "<?php echo $lat; ?>" />
+          <input type = "hidden" name = "lon" class = "lon" value = "<?php echo $lon; ?>" />
+      </div>
+
+    </form>
+  </body>
+</html>

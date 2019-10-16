@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>All Drawings</title>
+  </head>
+  <body>
+
+    <table>
+      <tr><th>ID</th> <th>YouGov ID</th></tr>
+      <?php
+         foreach ($table as $row) {
+         $id = $row['id']
+         ?>
+      <tr>
+        <td> <a href = "/drawing/<?php echo $id;?>"><?php echo $id; ?></a></td>
+        <td> <?php echo $row['yougovid']; ?></td>
+      </tr>
+      <?php } ?>
+    </table> 
+
+  </body>
+</html>
+              

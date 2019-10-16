@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Instructions</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type = "text/javascript" src = "http://maps.google.com/maps/api/js?key=AIzaSyBWk4CH-DQPd1xZ-4BdJkHpxpA4tATDThM&sensor=false"></script>
+    <script type = "text/javascript" src = "/js/geocoding.js"></script>
+    <link rel="stylesheet" type="text/css" href="drawing.css" media = "screen" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  </head>
+  <body>
+    <h2>Instructions</h2>
+    <p>Please enter your post code or a place name to choose the area you think of as your local community. This will centre the map on that post code or place. You can zoom in and out using the + and - buttons, and you can move the map using the [hand] symbol.</p>
+    <p>Please click (or tap) to outline your local community. Each click will create a point around your area. Keep clicking until you are happy with your local community area.</p>
+    <p>You can edit what you have done by dragging the points to widen or narrow your chosen area.</p>
+    <p>You can start over if you want to by clicking the highlighted area, deleting the community and beginning again.</p>
+    <form id = "geocode" action = "/drawing" method = "get">
+      <h2>Please enter your postcode or address</h2>
+      <div class = "geocode">
+        <input name = "postcode" class = "postcode" value = ""/>
+        <input type = "submit"   class = "postcode-lookup" value = "Enter" />
+        <input type = "hidden" name = "lat" class = "lat" />
+        <input type = "hidden" name = "lon" class = "lon" />
+      </div>
+    </form>
+  </body>
+</head>
+
