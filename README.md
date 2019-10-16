@@ -1,6 +1,6 @@
 # BES Map Drawing Component
 
-This project handles respondent map drawing for the BES.
+This project handles respondent map drawing for the BES. (Created by [Mark Fredrickson](http://github.com/markmfredrickson))
 
 ## Requirements:
 
